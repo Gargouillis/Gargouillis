@@ -46,3 +46,13 @@ for element in liste:
         break
     print(element)
 
+# compréhension de liste
+liste5 = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 9]
+nombre_positifs = []
+
+for element in liste5:
+    if element > 0:
+        nombre_positifs.append(element)
+
+print(liste5)
+print(nombre_positifs)
