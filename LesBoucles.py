@@ -56,3 +56,9 @@ for element in liste5:
 
 print(liste5)
 print(nombre_positifs)
+
+# avec la comprehension de liste on peut simplifier le code ci-dessus
+
+liste6 = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 9]
+nombre_positifs2 = [element * 2 for element in liste6 if element > 0]
+print(nombre_positifs2)
