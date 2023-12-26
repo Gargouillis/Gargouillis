@@ -1,0 +1,46 @@
+https://www.docstring.fr/glossaire/for/?utm_source=udemy&utm_campaign=for-loop-glossary
+
+COMMENT UTILISER LA BOUCLE FOR ?
+Avec Python, on utilise la boucle for pour parcourir des objets itérables comme les listes, les tuples ou encore les chaînes de caractères.
+
+C'est une boucle commune à presque tous les langages de programmation.
+
+Syntaxe de la boucle forformat_paragraph
+Une boucle for s'écrit de la manière suivante :
+
+for value in object:
+    code
+    ....
+La variable value prend la valeur de chaque élément contenu dans object à chaque itération.
+
+La boucle for continue jusqu'à ce qu'on ait atteint le dernier élément de object.
+
+En pratique, cela donne :
+
+fruits = ['🍊', '🍋', '🍏', '🍒', '🥭']
+
+for fruit in fruits:
+    print(fruit)
+for ... elseformat_paragraph
+Comme pour les structures conditionnelles if..else, vous pouvez définir un comportement par défaut pour votre boucle for grâce au mot-clé else.
+
+Ce mot clé est optionnel, mais cela vous permet d'exécuter du code lorsque la boucle for est terminée :
+
+fruits = ['🍊', '🍋', '🍏', '🍒', '🥭']
+
+for fruit in fruits:
+    print(fruit)
+else:
+    print('Plus de fruits dans le panier') 
+Exemplesformat_paragraph
+Quelques exemples d'utilisation de la boucle for avec différents types d'itérables :
+
+for i in range(3):
+    print(i)
+
+prenom = "John"
+for lettre in prenom:
+    print(lettre)
+
+for (pk, name) in [(1, "Patrick"), (2, "John"), (3, "Marie")]:
+    print(pk, name)
