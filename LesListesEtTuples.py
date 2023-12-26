@@ -74,3 +74,28 @@ print(liste1[1::2])
 # pour avoir la liste dans l'ordre inverse
 print(liste1[::-1])
 
+# les operateurs d'appartenance
+print("les operateurs d'appartenance")
+
+prenoms = ["Paul", "Joe", "Bob", "Maurice"]
+
+if "Joe" in prenoms:
+    prenoms.remove("Bob")
+    print("prénom supprimé")
+
+print(prenoms)
+
+# on peut aussi le faire sur des morceaux de chaine de caractères
+if "Java" in "javascript":
+    print("java est bien dans javascript")
+else:
+    print("non il n'est pas présent")
+
+# liste imbriquée
+
+langages = ["Python", ["Java", "C++", ["C"]], ["Ruby"]]
+
+print(langages)
+
+print(langages[1][2])
+print(langages[1][-1])
