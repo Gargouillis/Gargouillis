@@ -40,7 +40,7 @@ print(resultat)
 continuer = "o"
 while continuer == "o":
     print("On continue !")
-    continuer = input("Voulez-vous continuer ? o/n ")   """
+    continuer = input("Voulez-vous continuer ? o/n ")   
 
 nombres = [1, 21, 5, 44, 4, 9, 5, 83, 29, 31, 25, 38]
 nombres_pairs = [i for i in nombres if i%2 ==0]
@@ -76,3 +76,24 @@ nombres_inverses = [i if i % 2 == 0 else -i for i in nombres]
 #     else:
 #         nombres_inverses.append(-i)
 print(nombres_inverses)
+
+
+valide = True
+nombre_str_un = input("Entrez un premier nombre : ")
+nombre_str_deux = input("Entrez un deuxième nombre : ")
+if not nombre_str_un.isdigit() or not nombre_str_deux.isdigit():
+    valide = False
+
+if valide == True:
+    print(f"Le résultat de l'addition de {nombre_str_un} avec {nombre_str_deux} est égal à {int(nombre_str_un) + int(nombre_str_deux)}")
+else:
+    print("Veuillez entrer deux nombres valides")    """
+continuer = True
+while continuer == True:
+    try:
+        a = int(input("Entrez un premier nombre : "))
+        b = int(input("Entrez un deuxième nombre : "))
+        print(f"Le résultat de l'addition de {a} avec {b} est égal à {a + b}")
+        continuer = False
+    except:
+        print("les valeures ne sont pas bonne")
