@@ -62,3 +62,16 @@ print(nombre_positifs)
 liste6 = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 9]
 nombre_positifs2 = [element * 2 for element in liste6 if element > 0]
 print(nombre_positifs2)
+
+# fonctions ANY et ALL
+
+liste_true_false = [True, True, True, True]
+print(any(liste_true_false))    # cette foncxtion permet de savoir si dans la liste il y a au moins 1 True et renvoie true si c'est le cas sinon false
+print(all(liste_true_false))    # all vérifie si tout est à True et donc renvoie true mais si un seul est false, renvoie false
+
+# dans ces 2 cas ci-dessus, c'est juste pour montrer comment marche les fonctions mais ca n'a pas d'interet
+# all([f.endswith(".jpg") for f in files]), dans cette exemple on vérifie que tous les fichiers d'une liste f se termine bien par .jpg
+
+# un autre exemple
+notes = [12, 8, 19, 15, 13, 9]
+print(any([x > 18 for x in notes]))
